@@ -63,9 +63,6 @@ export default function FloatingDownload() {
           APK
         </a>
       </div>
-
-      
-      
     </div>
   );
 }
