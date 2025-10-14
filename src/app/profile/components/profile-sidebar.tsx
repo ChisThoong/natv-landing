@@ -7,18 +7,21 @@ const menuItems = [
   { id: "support", label: "HỖ TRỢ/BÁO LỖI", icon: Settings },
   { id: "password", label: "ĐỔI MẬT KHẨU", icon: Lock },
 ] as const;
-
-export default function ProfileSidebar({
-  activeMenu,
-  onChange,
-  open,
-  onClose,
-}: {
-  activeMenu: string;
-  onChange: (id: string) => void;
-  open: boolean;
-  onClose: () => void;
-}) {
+export type MenuId = typeof menuItems[number]["id"];
+  
+interface ProfileSidebarProps {
+    activeMenu: MenuId;
+    onChange: (id: MenuId) => void;
+    open: boolean;
+    onClose: () => void;
+  }
+  
+  export default function ProfileSidebar({
+    activeMenu,
+    onChange,
+    open,
+    onClose,
+  }: ProfileSidebarProps) {
   return (
     <aside
       className={`fixed h-[100vh] lg:static inset-y-0 left-0 z-30 w-64

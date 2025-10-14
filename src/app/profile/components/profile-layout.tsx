@@ -7,10 +7,11 @@ import ProfileHistory from "./profile-history";
 import ProfileSupport from "./profile-support";
 import ProfilePassword from "./profile-password";
 import Link from "next/link";
+import type { MenuId } from "./profile-sidebar";
 
 export default function ProfileLayout() {
-  const [activeMenu, setActiveMenu] = useState<"account" | "history" | "support" | "password">("account");
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [activeMenu, setActiveMenu] = useState<MenuId>("account");
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen bg-black text-gray-200">
@@ -62,12 +63,12 @@ export default function ProfileLayout() {
           <ProfileSidebar
             activeMenu={activeMenu}
             onChange={(id) => {
-              setActiveMenu(id as any);
-              setSidebarOpen(false);
+                setActiveMenu(id);
+                setSidebarOpen(false);
             }}
             open={sidebarOpen}
             onClose={() => setSidebarOpen(false)}
-          />
+            />
 
           {/* Main content */}
           <main className="flex-1 p-6 lg:p-10">
