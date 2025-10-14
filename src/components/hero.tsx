@@ -11,14 +11,20 @@ export default function Hero() {
           alt="Night at the Valley Hero"
           className="w-full h-full object-cover object-center sm:object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/70" />
+        <img
+          src="/images/18.png"
+          alt="boy-small"
+          className="absolute top-0 left-0 object-cover"
+        />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/70" /> */}
       </div>
       
+      
       {/* Additional Overlays */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(0,0,0,0)_0%,rgba(0,0,0,0.4)_70%,rgba(0,0,0,0.6)_100%)]"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent"></div>
-      </div>
+      </div> */}
       
       {/* Dot Pattern Overlay */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle,rgba(0,0,0,0.3)_0.5px,transparent_0.5px)] [background-size:3px_3px]"></div>

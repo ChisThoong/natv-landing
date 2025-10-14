@@ -20,7 +20,7 @@ export default function FooterSection() {
   ];
 
   return (
-    <footer className="relative w-full bg-black border-t border-gray-800 py-12 sm:py-16 mt-20">
+    <footer className="relative w-full bg-black border-t border-gray-800 py-12 sm:py-16 ">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 via-black to-black"></div>
 

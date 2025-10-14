@@ -62,6 +62,11 @@ export default function FloatingDownload() {
           <Package className="w-4 h-4" />
           APK
         </a>
+          {/* <img
+            src="/images/18.png"
+            alt="boy-small"
+            className="rounded-sm"
+          /> */}
       </div>
     </div>
   );

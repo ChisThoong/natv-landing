@@ -49,7 +49,7 @@ export default function Welcome() {
           
           {/* Right Side - Video */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end animate-slide-in-right">
-            <div className="relative w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px]">
+            <div className="relative w-full max-w-[400px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px]">
               {/* Video Container with 9:16 Aspect Ratio */}
               <div 
                 className="relative rounded-3xl overflow-hidden shadow-2xl"
@@ -66,7 +66,7 @@ export default function Welcome() {
                     loop
                     muted
                     playsInline
-                    poster="/images/video-poster.jpg"
+                    poster="/videos/night-at-the-valley-promo-2.mp4"
                   >
                     <source src="/videos/night-at-the-valley-promo-2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

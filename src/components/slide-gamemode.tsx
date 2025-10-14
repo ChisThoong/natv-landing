@@ -53,12 +53,12 @@ export default function GameModeSection() {
             : "Explore three unique game modes – each offering new challenges and rewards."}
         </p>
 
-        {/* === 3 cột 1 hàng === */}
-        <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
+        {/* === 3 cột full width === */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {modes.map((mode) => (
             <div
               key={mode.id}
-              className="group relative w-[300px] sm:w-[340px] md:w-[360px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-white/60 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-white/20"
+              className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border-2 border-gray-700 hover:border-white/60 transition-all duration-500 hover:scale-105 shadow-lg hover:shadow-white/20"
             >
               {/* Image */}
               <div className="relative w-full aspect-[4/5] overflow-hidden">
@@ -88,6 +88,7 @@ export default function GameModeSection() {
           ))}
         </div>
       </div>
+
     </section>
   );
 }

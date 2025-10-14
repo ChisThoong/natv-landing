@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Menu, X, Globe, User, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/language-context';
+import Link from "next/link";
 
 interface Language {
   code: 'VI' | 'EN';
@@ -133,13 +134,16 @@ export default function Header() {
             </div>
 
             {/* Login Button */}
-            <button className="group relative px-8 py-2 bg-gray-800 hover:bg-gray-700 text-white font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <Link href="/login">
+              <button className="group relative px-8 py-2 bg-gray-800 hover:bg-gray-700 text-white font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                 <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                <span className="relative flex items-center gap-2">
-                  <span>{t("login")}</span>
-                </span>
+                  <span className="relative flex items-center gap-2">
+                    <span>{t("login")}</span>
+                  </span>
               </button>
+            </Link>
           </div>
+          
 
           {/* Mobile Menu Button */}
           <button
