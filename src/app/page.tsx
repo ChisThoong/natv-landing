@@ -30,9 +30,9 @@ export default function Home() {
       <FooterSection/>
         {/* <WeaponsSection/> */}
       </main>
-      <div className="hidden md:block">
-        <FloatingDownload />
-      </div>
+      
+      <FloatingDownload />
+      
     </div>
   );
 }

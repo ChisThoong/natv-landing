@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/language-context";
+import { Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function EquipmentSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -341,125 +343,198 @@ export default function EquipmentSection() {
     setCurrentIndex(0);
   };
 
+ 
+
   // === UI ===
   return (
-    <section className="relative w-full bg-black overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24">
+    <section className="relative w-full bg-black overflow-hidden py-20 sm:py-24 md:py-32">
+      {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.03),transparent_70%)]"></div>
 
+      {/* Floating background elements */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+
+      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        
-
-        {/* Section Title */}
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase text-white mb-4">
-            {t("weaponTitle")}        
-          </h2>
-          <p className="text-xl sm:text-2xl text-gray-400"> {t("weaponSubtitle")}</p>
-        </div>
-            {/* Tabs */}
-            <div className="flex justify-center mb-10">
-              <button
-                onClick={() => switchTab("gun")}
-                className={`px-6 py-3 text-lg font-bold rounded-l-xl border-2 border-gray-600 transition-all duration-300 ${
-                  activeTab === "gun"
-                    ? "bg-gray-800 text-white border-white"
-                    : "text-gray-400 hover:text-white hover:border-white/40"
-                }`}
-              >
-                {currentLang === "VI" ? "Súng" : "Gun"}
-              </button>
-              <button
-                onClick={() => switchTab("armor")}
-                className={`px-6 py-3 text-lg font-bold rounded-r-xl border-2 border-gray-600 transition-all duration-300 ${
-                  activeTab === "armor"
-                    ? "bg-gray-800 text-white border-white"
-                    : "text-gray-400 hover:text-white hover:border-white/40"
-                }`}
-              >
-                {currentLang === "VI" ? "Giáp" : "Armor"}
-              </button>
+        {/* Section Header */}
+        <div className="text-center mb-16 sm:mb-20">
+          <div className="inline-block mb-4">
+            <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white/10 to-white/5 rounded-full border border-white/20 backdrop-blur-sm">
+              <Sparkles className="w-4 h-4 text-white" />
+              <span className="text-white text-sm font-semibold uppercase tracking-wider">
+                {t("weaponSection")}
+              </span>
             </div>
+          </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase text-white mb-6 tracking-tight leading-tight">
+            {currentLang === "VI" ? (
+              <>
+                Trang Bị<br />
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  Hành Trình
+                </span>
+              </>
+            ) : (
+              <>
+                Equip for<br />
+                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                the Journey
+                </span>
+              </>
+            )}
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            {t("weaponSubtitle")}
+          </p>
+        </div>
 
-        {/* Main Display */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
-          {/* Text Info */}
-          <div className="flex items-center">
-            <div
-              className={`w-full space-y-6 transition-all duration-500 ${
-                isTransitioning ? "opacity-0 translate-x-10" : "opacity-100 translate-x-0"
+        {/* Tabs */}
+        <div className="flex justify-center mb-12 gap-3">
+          {[
+            { key: "gun", vi: "Súng", en: "Gun" },
+            { key: "armor", vi: "Giáp", en: "Armor" },
+          ].map((tab) => (
+            <button
+              key={tab.key}
+              onClick={() => switchTab(tab.key as "gun" | "armor")}
+              className={`relative px-8 py-3 text-base sm:text-lg font-bold rounded-xl border transition-all duration-500 backdrop-blur-sm overflow-hidden group ${
+                activeTab === tab.key
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white border-white/20 shadow-lg shadow-blue-500/30"
+                  : "text-gray-400 border-gray-800 hover:text-white hover:border-gray-700 hover:bg-white/5"
               }`}
             >
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2">
-                {item.name}
-              </h3>
-              <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed text-justify">
-                {desc}
-              </p>
+              {/* Hover glow effect */}
+              {activeTab !== tab.key && (
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-purple-600/0 to-pink-600/0 group-hover:from-blue-600/10 group-hover:via-purple-600/10 group-hover:to-pink-600/10 transition-all duration-500"></div>
+              )}
+              
+              <span className="relative z-10">{currentLang === "VI" ? tab.vi : tab.en}</span>
+              
+              {/* Active indicator line */}
+              {activeTab === tab.key && (
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"></div>
+              )}
+            </button>
+          ))}
+        </div>
 
-              <h4 className="text-2xl font-extrabold text-white mb-4 tracking-wide">
-                Grade Skill
+        {/* Main Display */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16 items-center max-w-7xl mx-auto">
+          {/* Weapon Info */}
+          <motion.div
+            animate={{ opacity: isTransitioning ? 0 : 1, x: isTransitioning ? -20 : 0 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6 lg:pr-8"
+          >
+            {/* Title with decorative line */}
+            <div className="space-y-3">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                {item?.name}
+              </h3>
+              <div className="flex items-center gap-2">
+                <div className="h-1 w-16 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full"></div>
+                <div className="h-1 w-1 bg-gray-600 rounded-full"></div>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-400 text-base sm:text-lg leading-relaxed">{desc}</p>
+
+            {/* Grade Skills */}
+            <div className="pt-4">
+              <h4 className="text-xl sm:text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                {currentLang === "VI" ? "Cấp Độ Kỹ Năng" : "Grade Skill"}
+                <div className="h-px flex-1 bg-gradient-to-r from-gray-700 to-transparent"></div>
               </h4>
-              <ul className="space-y-2 text-lg sm:text-xl">
+
+              <ul className="space-y-3">
                 {gradeList.map((g) => (
-                  <li key={g.tier} className="flex items-center gap-2 flex-nowrap">
-                  <span className={`${g.color} font-extrabold whitespace-nowrap`}>● {g.tier}:</span>
-                  <span className="text-gray-200 ">{g.effect}</span>
-                </li>
+                  <li key={g.tier} className="group">
+                    <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-white/5 to-transparent border border-white/5 hover:border-white/10 hover:from-white/10 transition-all duration-300">
+                      <span className={`${g.color} font-extrabold text-lg mt-0.5`}>●</span>
+                      <div className="flex-1">
+                        <span className="text-white font-semibold">{g.tier}</span>
+                        <span className="text-gray-400 ml-2">{g.effect}</span>
+                      </div>
+                    </div>
+                  </li>
                 ))}
               </ul>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Image */}
-          <div className="flex items-center justify-center lg:justify-end">
-              <div className="relative w-full max-w-md aspect-square">
-                {/* Glow Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-r  blur-3xl opacity-30 animate-pulse`}></div>
+          {/* Weapon Image */}
+          <motion.div
+            animate={{
+              opacity: isTransitioning ? 0 : 1,
+              scale: isTransitioning ? 0.95 : 1,
+            }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center lg:justify-end"
+          >
+            <div className="relative w-full max-w-lg aspect-square group">
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-20 blur-2xl rounded-full group-hover:opacity-40 transition-opacity duration-700"></div>
+
+              {/* Card Container */}
+              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-gray-800 bg-gradient-to-br from-gray-900 via-gray-800 to-black backdrop-blur-sm shadow-2xl group-hover:border-gray-700 transition-all duration-500">
                 
-                {/* Image Container */}
-                <div className={`relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden border-2 border-gray-700 transition-all duration-500 ${
-                  isTransitioning ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
-                }`}>
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-contain p-6 transition-transform duration-300"
-                    />
-                </div>
+                {/* Inner glow overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/10 via-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Image */}
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="relative z-10 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110"
+                />
+
+                {/* Bottom gradient line */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
               </div>
             </div>
+          </motion.div>
         </div>
 
         {/* Thumbnails */}
-        <div className="flex justify-center gap-3 sm:gap-4 mt-12 flex-wrap px-4">
+        <div className="flex justify-center gap-4 flex-wrap">
           {data.map((w, idx) => (
             <button
-              key={w.id}
-              onClick={() => goToItem(idx)}
-              disabled={isTransitioning}
-              className={`relative group transition-all duration-300 ${
-                idx === currentIndex
-                  ? "scale-110"
-                  : "scale-100 opacity-60 hover:opacity-100 hover:scale-105"
-              } disabled:cursor-not-allowed`}
-            >
-              <div
-                className={`w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden border-2 transition-all bg-gradient-to-br from-gray-800 to-gray-900 ${
-                  idx === currentIndex
-                    ? `border-white shadow-lg shadow-white/50`
-                    : "border-gray-600 hover:border-white/50"
-                }`}
-              >
+            key={w.id}
+            onClick={() => goToItem(idx)}
+            disabled={isTransitioning}
+            className={`relative group transition-all duration-300 ${
+              idx === currentIndex
+                ? "scale-110"
+                : "scale-100 opacity-70 hover:opacity-100 hover:scale-105"
+            }`}
+          >
+            {/* Gradient border wrapper for active state */}
+            {idx === currentIndex ? (
+              <div className="p-[2px] rounded-xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 shadow-lg shadow-purple-400/50">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
+                  <img
+                    src={w.image}
+                    alt={w.name}
+                    className="w-full h-full object-contain p-3"
+                  />
+                </div>
+              </div>
+            ) : (
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden border-2 border-gray-700  transition-all bg-gradient-to-br from-gray-800 to-gray-900">
                 <img
                   src={w.image}
                   alt={w.name}
                   className="w-full h-full object-contain p-3"
                 />
               </div>
-              {idx === currentIndex && (
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 bg-white rounded-full animate-pulse"></div>
-              )}
-            </button>
+            )}
+            {idx === currentIndex && (
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full animate-ping"></div>
+            )}
+          </button>
           ))}
         </div>
       </div>

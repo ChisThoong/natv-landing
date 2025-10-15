@@ -14,7 +14,7 @@ export default function Hero() {
         <img
           src="/images/18.png"
           alt="boy-small"
-          className="absolute top-0 left-0 object-cover"
+          className="absolute top-30 left-0 object-cover"
         />
         {/* <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/70" /> */}
       </div>

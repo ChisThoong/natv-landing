@@ -42,6 +42,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Bước vào ngục tối sâu nhất để thách đấu Stone King trong một trận chiến hoành tráng!",
 
     // Welcome
+    welcomeSection:'Tổng quan',
     welcomeTitle: "Tham gia trận chiến ma thuật!",
     welcomeSubtitle1:
       "Bước vào thế giới mê hoặc của Làng Ngọc Lục Bảo, nơi Moo và Lulu cần sự giúp đỡ của bạn để bảo vệ thị trấn cổ kính của họ khỏi cuộc xâm lược của những sinh vật ma thuật!",
@@ -52,6 +53,7 @@ const translations: Record<Language, Record<string, string>> = {
     join: "Chơi Ngay",
 
     // Weapons
+    weaponSection:"Trang bị",
     weaponTitle: "Trang bị",
     weaponSubtitle: "Đa dạng trang bị – tùy biến phong cách chiến đấu của bạn!",
 
@@ -101,6 +103,10 @@ const translations: Record<Language, Record<string, string>> = {
     "profile.menu.history": "LỊCH SỬ NẠP TIỀN",
     "profile.menu.support": "HỖ TRỢ/BÁO LỖI",
     "profile.menu.password": "ĐỔI MẬT KHẨU",
+
+    // download
+    "download.title":"Tải Game",
+    "download.subTitle":"Quét mã để tải"
   },
 
   EN: {
@@ -125,6 +131,7 @@ const translations: Record<Language, Record<string, string>> = {
     gameModeSubtitle3:
       "Enter the deepest dungeon to challenge the Stone King in an epic battle!",
 
+    welcomeSection:'Overview', 
     welcomeTitle: "JOIN THE MAGICAL BATTLE!",
     welcomeSubtitle1:
       "Step into the enchanting world of Emerald Village, where Moo and Lulu need your help to defend their quaint town from magical creatures!",
@@ -134,6 +141,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Ready for an idle game adventure packed with strategy and mystery?",
     join: "Start Your Adventure",
 
+    weaponSection:"Equipments",
     weaponTitle: "Equipments",
     weaponSubtitle: "Diverse equipment – customize your combat style!",
 
@@ -180,7 +188,12 @@ const translations: Record<Language, Record<string, string>> = {
     "profile.menu.history": "PAYMENT HISTORY",
     "profile.menu.support": "SUPPORT / BUG REPORT",
     "profile.menu.password": "CHANGE PASSWORD",
+
+    // download
+    "download.title": "Download",
+    "download.subTitle": "Scan the QR code to download"
   },
+  
 };
 
 // ================== CONTEXT SETUP ==================
