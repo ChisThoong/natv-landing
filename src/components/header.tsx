@@ -32,6 +32,7 @@ export default function Header() {
     { labelKey: 'overview', targetId: 'overview' },
     { labelKey: 'gamemode', targetId: 'gamemode' },
     { labelKey: 'equipment', targetId: 'equipment' },
+    { labelKey: 'skill', targetId: 'skill' },
     { labelKey: 'news', targetId: 'news' },
     { labelKey: 'support', externalUrl: 'https://nightvalley.gg/feedback' },
   ];

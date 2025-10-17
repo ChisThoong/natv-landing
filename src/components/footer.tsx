@@ -10,6 +10,7 @@ export default function FooterSection() {
     { labelEN: "Overview", labelVI: "Tổng Quan", href: "#overview" },
     { labelEN: "Game Mode", labelVI: "Chế Độ Chơi", href: "#gamemode" },
     { labelEN: "Equipment", labelVI: "Trang Bị", href: "#equipment" },
+    { labelEN: "Skill", labelVI: "Kỹ năng", href: "#skill" },
     { labelEN: "News", labelVI: "Tin Tức", href: "#news" },
   ];
 

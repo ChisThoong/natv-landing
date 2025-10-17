@@ -7,7 +7,7 @@ import EquipmentSection from "@/components/equipment";
 import NewsSection from "@/components/news";
 import FooterSection from "@/components/footer";
 import FloatingDownload from "@/components/floating-download";
-
+import SkillsSection from "@/components/skill";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -23,6 +23,9 @@ export default function Home() {
         </section>
         <section id="equipment">
           <EquipmentSection />
+        </section>
+        <section id="skill">
+          <SkillsSection />
         </section>
         <section id="news">
           <NewsSection />
