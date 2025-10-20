@@ -17,340 +17,339 @@ export default function SkillsSection() {
       active: {
         name: "Rapid Fire",
         nameVN: "Rapid Fire",
-        description: "Attacks have a % chance to activate Rapid Fire, which increases attack speed temporarily for a duration.",
-        descriptionVN: "Attacks have a % chance to activate Rapid Fire, which increases attack speed temporarily for a duration.",
+        description: "Each shot has a chance to boost <span class='font-bold' style='color:#C7F400'>ATK SPD</span> for a short duration.",
+        descriptionVN: "Mỗi phát bắn có cơ hội tăng <span class='font-bold' style='color:#C7F400'>TỐC ĐỘ TẤN CÔNG</span> trong thời gian ngắn.",
         image: "./images/skill/skill1.png",
       },
       passive: {
         name: "Pure Strength",
         nameVN: "Pure Strength",
         description: "Increases attack damage by %",
-        descriptionVN: "Increases attack damage by %",
+        descriptionVN: "Tăng sát thương tấn công theo phần trăm.",
         image: "./images/skill/skill15.png",
       },
       ultimate: {
         name: "Rapid Power",
         nameVN: "Rapid Power",
-        description: "A stronger skill than Rapid Fire. Increases attack speed and attack damage for a duration.",
-        descriptionVN: "A stronger skill than Rapid Fire. Increases attack speed and attack damage for a duration.",
+        description: "Now also greatly increases <span class='font-bold' style='color:#FFA500'>ATK DMG</span>.",
+        descriptionVN: "Giờ đây còn tăng mạnh <span class='font-bold' style='color:#FFA500'>SÁT THƯƠNG TẤN CÔNG</span>.",
         image: "./images/skill/skill1_ultimate.png",
-      }
+      },
     },
     {
       id: 2,
       active: {
         name: "Deadly Focus",
         nameVN: "Deadly Focus",
-        description: "Attacks have a % chance to activate Deadly Focus, which increases the critical rate temporarily for a duration.",
-        descriptionVN: "Attacks have a % chance to activate Deadly Focus, which increases the critical rate temporarily for a duration.",
+        description: "Each shot has a chance to increase <span class='font-bold' style='color:#FFA500'>CRIT RATE</span> for a short duration.",
+        descriptionVN: "Mỗi đòn bắn có cơ hội tăng <span class='font-bold' style='color:#FFA500'>TỶ LỆ CHÍ MẠNG</span> trong thời gian ngắn.",
         image: "./images/skill/skill2.png",
       },
       passive: {
         name: "Increased Crit Damage",
         nameVN: "Increased Crit Damage",
         description: "Increases critical damage by %",
-        descriptionVN: "Increases critical damage by %",
+        descriptionVN: "Tăng sát thương chí mạng theo phần trăm.",
         image: "./images/skill/skill20.png",
       },
       ultimate: {
         name: "Deadly Shot",
         nameVN: "Deadly Shot",
-        description: "Increases critical rate to 100%. Enemies killed by critical hit will explode doing AOE damage to nearby enemies.",
-        descriptionVN: "Increases critical rate to 100%. Enemies killed by critical hit will explode doing AOE damage to nearby enemies.",
+        description: "Enemies killed by a critical hit now explode for <span class='font-bold' style='color:#FF4500'>AOE DAMAGE</span>.",
+        descriptionVN: "Kẻ địch bị hạ gục bằng đòn chí mạng sẽ phát nổ, gây <span class='font-bold' style='color:#FF4500'>SÁT THƯƠNG DIỆN RỘNG</span>.",
         image: "./images/skill/skill2_ultimate.png",
-      }
+      },
     },
     {
       id: 3,
       active: {
         name: "Snowball",
         nameVN: "Snowball",
-        description: "Enemies will take AOE damage and be slowed for a duration.",
-        descriptionVN: "Enemies will take AOE damage and be slowed for a duration.",
+        description: "Summons a Snow Ball that deals damage and <span class='font-bold' style='color:#00BFFF'>SLOWS</span> enemies.",
+        descriptionVN: "Triệu hồi cầu tuyết gây sát thương và <span class='font-bold' style='color:#00BFFF'>LÀM CHẬM</span> kẻ địch.",
         image: "./images/skill/skill3.png",
       },
       passive: {
         name: "Increased Attack Range",
         nameVN: "Increased Attack Range",
         description: "Increases attack range by %",
-        descriptionVN: "Increases attack range by %",
+        descriptionVN: "Tăng phạm vi tấn công theo phần trăm.",
         image: "./images/skill/skill16.png",
       },
       ultimate: {
         name: "Ice Age",
         nameVN: "Ice Age",
-        description: "Does more damage and now freezes affected enemies in the AOE range instead of just slowing their movement.",
-        descriptionVN: "Does more damage and now freezes affected enemies in the AOE range instead of just slowing their movement.",
+        description: "Now <span class='font-bold' style='color:#ADD8E6'>FREEZES</span> affected enemies.",
+        descriptionVN: "Giờ đây có thể <span class='font-bold' style='color:#ADD8E6'>ĐÓNG BĂNG</span> kẻ địch bị trúng chiêu.",
         image: "./images/skill/skill3_ultimate.png",
-      }
+      },
     },
     {
       id: 4,
       active: {
         name: "Meteorites",
         nameVN: "Meteorites",
-        description: "Spawns meteorites that will hit random areas (with enemies) in the attack radius. Enemies will take high AOE damage.",
-        descriptionVN: "Spawns meteorites that will hit random areas (with enemies) in the attack radius. Enemies will take high AOE damage.",
+        description: "Summons a Meteorite that deals <span class='font-bold' style='color:#FF4500'>AOE DAMAGE</span>.",
+        descriptionVN: "Triệu hồi thiên thạch gây <span class='font-bold' style='color:#FF4500'>SÁT THƯƠNG DIỆN RỘNG</span>.",
         image: "./images/skill/skill4.png",
       },
       passive: {
         name: "Increased EXP Gain",
         nameVN: "Increased EXP Gain",
         description: "Increases exp gained per enemy killed by %",
-        descriptionVN: "Increases exp gained per enemy killed by %",
+        descriptionVN: "Tăng lượng kinh nghiệm nhận được khi tiêu diệt kẻ địch.",
         image: "./images/skill/skill22.png",
       },
       ultimate: {
         name: "Chaos Destruction",
         nameVN: "Chaos Destruction",
-        description: "Does more damage and stuns affected enemies in the AOE range.",
-        descriptionVN: "Does more damage and stuns affected enemies in the AOE range.",
+        description: "Now <span class='font-bold' style='color:#800080'>STUNS</span> affected enemies.",
+        descriptionVN: "Giờ đây có thể <span class='font-bold' style='color:#800080'>GÂY CHOÁNG</span> kẻ địch bị trúng chiêu.",
         image: "./images/skill/skill4_ultimate.png",
-      }
+      },
     },
     {
       id: 5,
       active: {
         name: "Mud Ball",
         nameVN: "Mud Ball",
-        description: "Spawns mud puddles that will slow enemies in the AOE radius for a duration.",
-        descriptionVN: "Spawns mud puddles that will slow enemies in the AOE radius for a duration.",
+        description: "Summons a Mud Ball that <span class='font-bold' style='color:#8B4513'>SLOWS</span> enemies.",
+        descriptionVN: "Triệu hồi quả cầu bùn khiến kẻ địch bị <span class='font-bold' style='color:#8B4513'>LÀM CHẬM</span>.",
         image: "./images/skill/skill5.png",
       },
       passive: {
         name: "Increased Attack Range",
         nameVN: "Increased Attack Range",
         description: "Increases attack range by %",
-        descriptionVN: "Increases attack range by %",
+        descriptionVN: "Tăng phạm vi tấn công theo phần trăm.",
         image: "./images/skill/skill16.png",
       },
       ultimate: {
         name: "Mud Moat",
         nameVN: "Mud Moat",
-        description: "Applies a big movement slow to the entire attack radius (same as the previous mud moat skill).",
-        descriptionVN: "Applies a big movement slow to the entire attack radius (same as the previous mud moat skill).",
+        description: "Now summons a moat that <span class='font-bold' style='color:#8B4513'>SLOWS</span> the entire attack radius.",
+        descriptionVN: "Triệu hồi một vùng bùn bao phủ khiến tất cả kẻ địch trong phạm vi bị <span class='font-bold' style='color:#8B4513'>LÀM CHẬM</span>.",
         image: "./images/skill/skill5_ultimate.png",
-      }
+      },
     },
     {
       id: 6,
       active: {
         name: "Ricochet",
         nameVN: "Ricochet",
-        description: "Attacks have a % chance to ricochet to other nearby enemies.",
-        descriptionVN: "Attacks have a % chance to ricochet to other nearby enemies.",
+        description: "Each shot has a chance to ricochet onto nearby enemies.",
+        descriptionVN: "Mỗi phát bắn có cơ hội nảy sang kẻ địch ở gần.",
         image: "./images/skill/skill6.png",
       },
       passive: {
         name: "Increased HP Regen",
         nameVN: "Increased HP Regen",
         description: "Increases HP Regen by %",
-        descriptionVN: "Increases HP Regen by %",
+        descriptionVN: "Tăng tốc độ hồi máu theo phần trăm.",
         image: "./images/skill/skill19.png",
       },
       ultimate: {
         name: "Healing Touch",
         nameVN: "Healing Touch",
-        description: "Bounced attacks have a % chance to heal the hero for % of max HP.",
-        descriptionVN: "Bounced attacks have a % chance to heal the hero for % of max HP.",
+        description: "Ricochets now have a chance to <span class='font-bold' style='color:#7FFF00'>HEAL</span> some HP.",
+        descriptionVN: "Các phát đạn nảy giờ có cơ hội <span class='font-bold' style='color:#7FFF00'>HỒI MÁU</span> cho người chơi.",
         image: "./images/skill/skill6_ultimate.png",
-      }
+      },
     },
     {
       id: 7,
       active: {
         name: "Chain Lightning",
         nameVN: "Chain Lightning",
-        description: "Attacks have a % chance to deal with a chain lightning attack, hitting the primary target and other additional enemies.",
-        descriptionVN: "Attacks have a % chance to deal with a chain lightning attack, hitting the primary target and other additional enemies.",
+        description: "Each shot has a chance to activate a <span class='font-bold' style='color:#1E90FF'>CHAINED LIGHTNING</span> attack.",
+        descriptionVN: "Mỗi phát bắn có cơ hội kích hoạt <span class='font-bold' style='color:#1E90FF'>SÉT LIÊN HOÀN</span> tấn công nhiều mục tiêu.",
         image: "./images/skill/skill7.png",
       },
       passive: {
         name: "Increased Crit Rate",
         nameVN: "Increased Crit Rate",
         description: "Increases critical rate by %",
-        descriptionVN: "Increases critical rate by %",
+        descriptionVN: "Tăng tỷ lệ chí mạng theo phần trăm.",
         image: "./images/skill/skill20.png",
       },
       ultimate: {
         name: "Paralyzing Bolt",
         nameVN: "Paralyzing Bolt",
-        description: "Affected enemies are slowed by % for a duration.",
-        descriptionVN: "Affected enemies are slowed by % for a duration.",
+        description: "Now paralyzes affected enemies.",
+        descriptionVN: "Giờ đây có thể <span class='font-bold' style='color:#1E90FF'>GÂY TÊ LIỆT</span> kẻ địch bị trúng chiêu.",
         image: "./images/skill/skill7_ultimate.png",
-      }
+      },
     },
     {
       id: 8,
       active: {
         name: "Guardian Blade",
         nameVN: "Guardian Blade",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "Summons 2 spinning blades dealing <span class='font-bold' style='color:#FFA500'>DAMAGE</span>.",
+        descriptionVN: "Triệu hồi 2 lưỡi kiếm xoay quanh gây <span class='font-bold' style='color:#FFA500'>SÁT THƯƠNG</span> cho kẻ địch xung quanh.",
         image: "./images/skill/skill8.png",
       },
       passive: {
         name: "Increased HP",
         nameVN: "Increased HP",
         description: "Increases HP by %",
-        descriptionVN: "Increases HP by %",
+        descriptionVN: "Tăng lượng máu tối đa theo phần trăm.",
         image: "./images/skill/skill18.png",
       },
       ultimate: {
         name: "Guardian Angel",
         nameVN: "Guardian Angel",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "Now <span class='font-bold' style='color:#4169E1'>SHIELDS</span> hero after blades disappear.",
+        descriptionVN: "Sau khi lưỡi kiếm biến mất, tạo <span class='font-bold' style='color:#4169E1'>LÁ CHẮN</span> bảo vệ anh hùng.",
         image: "./images/skill/skill8_ultimate.png",
-      }
+      },
     },
     {
       id: 9,
       active: {
         name: "Pan Attack",
         nameVN: "Pan Attack",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "Sidekick's pan attack with a chance to <span class='font-bold' style='color:#800080'>STUN</span> enemies.",
+        descriptionVN: "Đòn tấn công bằng chảo của đồng đội có cơ hội <span class='font-bold' style='color:#800080'>GÂY CHOÁNG</span> kẻ địch.",
         image: "./images/skill/skill9.png",
       },
       passive: {
         name: "Increased EXP Gain",
         nameVN: "Increased EXP Gain",
         description: "Increases HP by %",
-        descriptionVN: "Increases HP by %",
+        descriptionVN: "Tăng kinh nghiệm nhận được khi tiêu diệt kẻ địch.",
         image: "./images/skill/skill22.png",
       },
       ultimate: {
         name: "Ultimate Pan",
         nameVN: "Ultimate Pan",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "The Ultimate Pan. Increases <span class='font-bold' style='color:#FFA500'>DAMAGE</span> and <span class='font-bold' style='color:#800080'>STUN</span> chance.",
+        descriptionVN: "Chiêu cuối của chảo — tăng <span class='font-bold' style='color:#FFA500'>SÁT THƯƠNG</span> và cơ hội <span class='font-bold' style='color:#800080'>GÂY CHOÁNG</span>.",
         image: "./images/skill/skill9_ultimate.png",
-      }
+      },
     },
     {
       id: 10,
       active: {
         name: "Net",
         nameVN: "Net",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "Sidekick throws a net <span class='font-bold' style='color:#008000'>TRAPPING</span> enemies for a duration.",
+        descriptionVN: "Đồng đội tung lưới <span class='font-bold' style='color:#008000'>BẮT GIỮ</span> kẻ địch trong thời gian ngắn.",
         image: "./images/skill/skill10.png",
       },
       passive: {
         name: "Increased Gold Gain",
         nameVN: "Increased Gold Gain",
         description: "Increases HP by %",
-        descriptionVN: "Increases HP by %",
+        descriptionVN: "Tăng lượng vàng nhận được từ kẻ địch.",
         image: "./images/skill/skill23.png",
       },
       ultimate: {
         name: "Super Net",
         nameVN: "Super Net",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "A big Super Net! Increases <span class='font-bold' style='color:#008000'>TRAP</span> radius, duration, and reduces cooldown.",
+        descriptionVN: "Lưới siêu to! Tăng phạm vi <span class='font-bold' style='color:#008000'>BẪY</span>, kéo dài thời gian hiệu lực và giảm hồi chiêu.",
         image: "./images/skill/skill10_ultimate.png",
-      }
+      },
     },
     {
       id: 11,
       active: {
         name: "Shock Wave",
         nameVN: "Shock Wave",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "A shock wave that deals <span class='font-bold' style='color:#FF4500'>AOE DAMAGE</span> to all enemies in the radius.",
+        descriptionVN: "Tạo sóng xung kích gây <span class='font-bold' style='color:#FF4500'>SÁT THƯƠNG DIỆN RỘNG</span> cho mọi kẻ địch trong phạm vi.",
         image: "./images/skill/skill11.png",
       },
       passive: {
         name: "Increased Attack Speed",
         nameVN: "Increased Attack Speed",
         description: "Increases attack speed by %",
-        descriptionVN: "Increases attack speed by %",
+        descriptionVN: "Tăng tốc độ tấn công theo phần trăm.",
         image: "./images/skill/skill17.png",
       },
       ultimate: {
         name: "Sonic Wave",
         nameVN: "Sonic Wave",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "Now <span class='font-bold' style='color:#FFA500'>PUSHES</span> enemies back.",
+        descriptionVN: "Giờ đây có thể <span class='font-bold' style='color:#FFA500'>ĐẨY LÙI</span> kẻ địch.",
         image: "./images/skill/skill11_ultimate.png",
-      }
+      },
     },
     {
       id: 12,
       active: {
         name: "Poison Cloud",
         nameVN: "Poison Cloud",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "Summons a poison cloud that deals <span class='font-bold' style='color:#FF4500'>AOE DAMAGE</span> over time.",
+        descriptionVN: "Triệu hồi đám mây độc gây <span class='font-bold' style='color:#FF4500'>SÁT THƯƠNG THEO THỜI GIAN</span>.",
         image: "./images/skill/skill12.png",
       },
       passive: {
         name: "Increased Attack Speed",
         nameVN: "Increased Attack Speed",
         description: "Increases attack speed by %",
-        descriptionVN: "Increases attack speed by %",
+        descriptionVN: "Tăng tốc độ tấn công theo phần trăm.",
         image: "./images/skill/skill17.png",
       },
       ultimate: {
         name: "Fog of Poison",
         nameVN: "Fog of Poison",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "Now summons a deadly FOG that covers the entire attack radius.",
+        descriptionVN: "Triệu hồi <span class='font-bold' style='color:#008000'>SƯƠNG ĐỘC</span> bao phủ toàn bộ khu vực tấn công.",
         image: "./images/skill/skill12_ultimate.png",
-      }
+      },
     },
     {
       id: 13,
       active: {
         name: "Fighting Flower",
         nameVN: "Fighting Flower",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "Summons a <span class='font-bold' style='color:#FF69B4'>FLOWER</span> that attacks nearby enemies.",
+        descriptionVN: "Triệu hồi <span class='font-bold' style='color:#FF69B4'>BÔNG HOA</span> tấn công kẻ địch xung quanh.",
         image: "./images/skill/skill13.png",
       },
       passive: {
         name: "Increased Crit Rate",
         nameVN: "Increased Crit Rate",
         description: "Increases attack speed by %",
-        descriptionVN: "Increases attack speed by %",
+        descriptionVN: "Tăng tỷ lệ chí mạng theo phần trăm.",
         image: "./images/skill/skill21.png",
       },
       ultimate: {
         name: "Venus Fly Trap",
         nameVN: "Venus Fly Trap",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "Now has a chance to DEVOUR a whole enemy (not effective on bosses).",
+        descriptionVN: "Giờ đây có cơ hội <span class='font-bold' style='color:#FF69B4'>NUỐT CHỬNG</span> toàn bộ kẻ địch (không hiệu quả với trùm).",
         image: "./images/skill/skill13_ultimate.png",
-      }
+      },
     },
     {
       id: 14,
       active: {
         name: "Land Mine",
         nameVN: "Land Mine",
-        description: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
-        descriptionVN: "Spawn blade(s) that rotates around the hero, dealing damage to all enemies that the blade(s) pass through.",
+        description: "Summons 2 mines that explode for <span class='font-bold' style='color:#FF4500'>AOE DAMAGE</span> upon detonation.",
+        descriptionVN: "Triệu hồi 2 quả mìn phát nổ gây <span class='font-bold' style='color:#FF4500'>SÁT THƯƠNG DIỆN RỘNG</span> khi kích hoạt.",
         image: "./images/skill/skill14.png",
       },
       passive: {
         name: "Increase Attack",
         nameVN: "Increase Attack",
         description: "Increases attack speed by %",
-        descriptionVN: "Increases attack speed by %",
+        descriptionVN: "Tăng sát thương tấn công theo phần trăm.",
         image: "./images/skill/skill15.png",
       },
       ultimate: {
         name: "Mine Field",
         nameVN: "Mine Field",
-        description: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
-        descriptionVN: "Applies a shield after the blades disappear that absorbs damage (a % of the max HP). Lasts for 2 seconds or until shield is broken.",
+        description: "The entire area becomes a minefield. Mines will self-explode for the duration.",
+        descriptionVN: "Biến toàn bộ khu vực thành <span class='font-bold' style='color:#FF4500'>BÃI MÌN</span>; các mìn sẽ tự phát nổ trong thời gian hiệu lực.",
         image: "./images/skill/skill14_ultimate.png",
-      }
+      },
     },
-    
-    
   ];
+  
 
   const currentSkill = skills[selectedSkill];
 
@@ -464,10 +463,10 @@ export default function SkillsSection() {
               {/* Desktop Header */}
               <div className="hidden md:flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-green-500 to-cyan-500 flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-white" />
+                  <Zap className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white">
-                  {currentLang === "VI" ? "Kỹ Năng Bị Động" : "Passive Skill"}
+                  {currentLang === "VI" ? "Kỹ Năng Chủ Động" : "Active Skill"}
                 </h3>
               </div>
 
@@ -478,7 +477,7 @@ export default function SkillsSection() {
                   {/* Mobile Header inside card */}
                   <div className="flex md:hidden items-center gap-2 mb-3">
                     <div className="w-6 h-6 rounded-lg bg-gradient-to-r from-green-500 to-cyan-500 flex items-center justify-center">
-                      <Sparkles className="w-4 h-4 text-white" />
+                      <Zap className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-sm font-bold text-white">
                       {currentLang === "VI" ? "Bị Động" : "Passive"}
@@ -498,9 +497,15 @@ export default function SkillsSection() {
                   <h4 className="text-xl md:text-2xl font-bold text-white mb-2">
                     {currentLang === "VI" ? currentSkill.active.nameVN : currentSkill.active.name}
                   </h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    {currentLang === "VI" ? currentSkill.active.descriptionVN : currentSkill.active.description}
-                  </p>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        currentLang === "VI"
+                          ? currentSkill.active.descriptionVN
+                          : currentSkill.active.description,
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -510,7 +515,7 @@ export default function SkillsSection() {
               {/* Desktop Header */}
               <div className="hidden md:flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
-                  <Sparkles className="w-5 h-5 text-white" />
+                  <Brain className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white">
                   {currentLang === "VI" ? "Kỹ Năng Bị Động" : "Passive Skill"}
@@ -524,7 +529,7 @@ export default function SkillsSection() {
                   {/* Mobile Header inside card */}
                   <div className="flex md:hidden items-center gap-2 mb-3">
                     <div className="w-6 h-6 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
-                      <Sparkles className="w-4 h-4 text-white" />
+                      <Brain className="w-4 h-4 text-white" />
                     </div>
                     <span className="text-sm font-bold text-white">
                       {currentLang === "VI" ? "Bị Động" : "Passive"}
@@ -544,9 +549,15 @@ export default function SkillsSection() {
                   <h4 className="text-xl md:text-2xl font-bold text-white mb-2">
                     {currentLang === "VI" ? currentSkill.passive.nameVN : currentSkill.passive.name}
                   </h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    {currentLang === "VI" ? currentSkill.passive.descriptionVN : currentSkill.passive.description}
-                  </p>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        currentLang === "VI"
+                          ? currentSkill.passive.descriptionVN
+                          : currentSkill.passive.description,
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -592,9 +603,15 @@ export default function SkillsSection() {
                   <h4 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent mb-2">
                     {currentLang === "VI" ? currentSkill.ultimate.nameVN : currentSkill.ultimate.name}
                   </h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {currentLang === "VI" ? currentSkill.ultimate.descriptionVN : currentSkill.ultimate.description}
-                  </p>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        currentLang === "VI"
+                          ? currentSkill.ultimate.descriptionVN
+                          : currentSkill.ultimate.description,
+                    }}
+                  />
                 </div>
               </div>
             </div>
